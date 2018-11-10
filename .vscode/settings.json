@@ -1,0 +1,5 @@
+{
+    "scm.alwaysShowProviders": true,
+    "git.detectSubmodules": false,
+    "git.enableSmartCommit": true
+}

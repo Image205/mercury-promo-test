@@ -1,0 +1,247 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Whitney SSm A", "Whitney SSm B", Helvetica, Arial, sans-serif;
+}
+
+
+@font-face {
+    font-family: 'SoftMicro-Normal-o';
+    src:url("img/fonts/SoftMicro/SoftMicro-Normal-o.ttf.woff") format('woff'),
+        url("img/fonts/SoftMicro/SoftMicro-Normal-o.ttf.svg") format('svg')
+; 
+    font-weight: normal;
+    font-style: normal;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.wrapper {
+    margin: 0 auto 0 auto;
+    width: 1600px;
+}
+main {
+    background-color: rgb(223, 223, 223);
+}
+header {
+    padding: 0;
+    margin-bottom: 0;
+    max-height: 75px;
+    background: linear-gradient( to right, #111111 0%, #222121 25%);
+    outline: 1px solid red;
+    width: 100%;
+}
+
+.header-logo {
+    float: left;
+    background: linear-gradient(
+        to right, #ffffff 1.8%, #8B0000 2%, #FF0000 17%, #222121 17.5% );
+    height: 75px;
+    min-width: 550px;
+    transform: skewx(-18deg);
+    outline: 1px solid rgb(21, 197, 21);
+}
+.header-logo img{
+    float: left;
+    height: 60px;
+    padding: 5px 5px 5px 60px; 
+    transform: skewx(18deg);
+    outline: 1px solid red;
+}
+
+.main-menu {
+    padding: 0;
+    margin: 0;
+    margin-left: 50px;
+    float: left;
+    height: 75px;
+    width: 1000px; 
+    outline: 1px solid green;
+    transform: skewx(-18deg);
+}
+.main-menu li {
+    list-style: none;
+    float: left;
+    margin-right: 50px;
+    background: #32CD32;
+    width: 30%;
+    height: 100%;
+/*     border: 5px solid #168f30; */
+}
+
+.main-menu li:last-child {
+    margin-right: 0;
+    
+}
+.main-menu a {
+    display: block;
+    font-family: "Franklin Gothic", Arial, sans-serif;
+    text-decoration: none;
+    color: #F0FFF0;
+    width: 300px;
+    height: 75px;
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 75px;
+    text-align: center;
+    text-transform: uppercase;
+    transform: skewX(18deg);
+}
+
+.promo {
+    margin: 0;
+    margin-bottom: 100px;
+    padding: 0;
+    position: relative;
+    min-height: 600px;
+    background: url("img/2013-08-12__05-23-52_1920.jpg") no-repeat;
+    background-size: 100%;
+    background-position: 50% 35%;
+}
+.promo-feature {
+    position: relative;
+    display: block;
+    float: right;
+    width: 1000px;
+    height: 600px;
+    margin: 0px;
+    outline: 1px solid rgb(97, 14, 206);
+}
+.promo-feature::after {
+    position: absolute;
+    top: 0;
+    right: -20%;
+    content:"";
+    z-index: 1;
+    width: 110%;
+    height: 105%;
+    background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 1));
+    transform: skewx(-18deg);
+}
+.promo-feature h1 {
+    padding: 0;
+    margin: 0;
+    z-index: 2;
+    position: absolute;
+    top: 25%;
+    right: 18%;
+    color: rgb(85, 84, 84);
+    text-transform: uppercase;
+    font-size: 75px;
+    font-family: 'SoftMicro-Normal-o', Helvetica, Arial, sans-serif;
+}
+.jet {
+    color: #32CD32;
+}
+.vol {
+    font-weight: bold;
+}
+.promo-feature h2 {
+    z-index: 2;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 45%;
+    right: 10%;
+    color: rgb(85, 84, 84);
+    text-transform: uppercase;
+}
+.promo-feature p {
+    position: absolute;
+    left: 30%;
+    top: 65%;
+    z-index: 2;
+    padding: 0;
+    margin:0;
+    width: 60%;
+    font-size: 20px;
+    color: rgb(85, 84, 84);
+}
+.feature-item {
+    position: relative;
+    display: block;
+    width: 45%;
+    height: 650px;
+    font-family: "Whitney SSm A", "Whitney SSm B", Helvetica, Arial, sans-serif;
+    color: rgb(85, 84, 84);
+}
+.feature-item h3 {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.feature-item p {
+    padding:0;
+    margin: 0;
+    font-size: 15px;
+}
+.feature-item:first-child {
+    margin-top: 250px;
+    margin-left: 20px;
+    float: left;
+    background: url("img/8010095341_75582b86fa_b.jpg");
+    background-size: cover;
+}
+.feature-item:first-child h3 {
+    position: absolute;
+    z-index:2;
+    top: 55%;
+    right: -25%;
+}
+.feature-item:first-child p{
+    position: absolute;
+    top: 65%;
+    right: -61.5%;
+    z-index: 2;
+    width: 60%;
+    line-height: 22px;
+}
+.feature-item:first-child::after {
+    z-index: 1;
+    content: "";
+    position: absolute;
+    bottom: -7%;
+    right: -105%;
+    height: 55%;
+    width: 130%;
+    background:rgba(255, 255, 255, 0.9) ;
+    transform: skewx(-18deg);
+}
+.feature-item:last-child {
+    margin-right: 20px;
+    float: right;
+    background: url("img/jet_25-40_big-tiller_outboard-detail-large-callout-image-1_3760x1300.jpg__1880x650_q85_crop-\,_size_canvas_subsampling-2_upscale.jpg");
+    background-position-x: 85%;
+}
+.feature-item:last-child h3 {
+    position: absolute;
+    top: -5%;
+    left: -65%;
+    z-index: 2;
+}
+.feature-item:last-child p{
+    position: absolute;
+    top: 5%;
+    left: -65%;
+    z-index: 2;
+    width: 60%;
+    line-height: 22px;
+}
+.feature-item:last-child p:last-child {
+    top: 25%;
+    left: -60%;
+}
+.feature-item:last-child::after {
+    content: "";
+    position: absolute;
+    top: -7%;
+    left: -85%;
+    height: 55%;
+    width: 110%;
+    background:rgba(255, 255, 255, 0.8) ;
+    transform: skewx(-18deg);
+}
